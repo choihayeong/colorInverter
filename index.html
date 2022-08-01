@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invert Color Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="contents">
+            <!-- picker -->
+            <h3>Color Picker</h3>
+            <div class="form-wrap">
+                <div class="form-input">
+                    <label for="iptColor" class="blind">Color Picker</label>
+                    <input type="color" id="iptColor" name="iptColor" class="ipt">
+                </div>
+                <div class="form-input">
+                    <label for="iptOpacity" class="blind">Opacity</label>
+                    <input type="number" id="iptOpacity" name="iptOpacity" value="100" min="0" max="100" class="ipt">
+                </div>
+            </div>
+            <!-- // -->
+            <!-- result -->
+            <div class="result">
+                <h3>Result</h3>
+                <p>
+                    hex code : <span id="hexCode"> </span> <br>
+                    rgba code : <span id="rgbaCode"> </span>
+                </p>
+                <div class="result__colorchip">
+                    <div class="btnwrap">
+                        <button type="button" id="chipAddBtn" title="컬러칩 추가하기" class="btn btn--add">
+                            <span class="icon icon--plus"></span>
+                        </button>
+                        <button type="button" id="chipDeleteBtn" title="컬러칩 삭제하기" class="btn btn--delete">
+                            <span class="icon icon--delete"></span>
+                        </button>
+                        <button type="button" id="generateBtn" title="랜덤 컬러 생성하기" class="btn btn--generate">
+                            <span class="icon icon--generate"></span>
+                        </button>
+                    </div>
+                    <table id="colorTbl" class="tbl">
+                        <caption>color chip</caption>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="chiparea active">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                                <td>
+                                    <span class="chiparea">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                                <td>
+                                    <span class="chiparea">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                                <td>
+                                    <span class="chiparea">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                                <td>
+                                    <span class="chiparea">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                                <td>
+                                    <span class="chiparea">
+                                        chip area
+                                    </span>
+                                    <button type="button" class="btn btn--chipdelete">
+                                        delete!
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- // -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
